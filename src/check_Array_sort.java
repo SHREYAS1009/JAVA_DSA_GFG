@@ -1,3 +1,5 @@
+
+import static java.lang.System.*;
 public class check_Array_sort {
     public static void main(String args[]) {
 
@@ -13,7 +15,7 @@ public class check_Array_sort {
             }
 
         }
-        System.out.println(flag);
+        out.println(flag);
 
     }
 }
