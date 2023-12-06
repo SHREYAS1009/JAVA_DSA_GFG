@@ -4,7 +4,7 @@ public class Frequencies_in_sorted_array
     public static void main(String args[])
     {
 
-        int arr[] = {10,10,20,20};
+        int arr[] = {40,50,50,50};
         //boolean flag=true;
         int count=1;
         for (int i=1;i<arr.length;i++)
