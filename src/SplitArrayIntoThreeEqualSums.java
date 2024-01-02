@@ -1,7 +1,7 @@
 public class SplitArrayIntoThreeEqualSums {
     public static void main(String[] args) {
-       // int[] arr = {5,2,6,1,1,1,1,4};
-        int[] arr = {3,2,5,1,1,5};
+       int[] arr = {5,2,6,1,1,1,1,4};
+        //int[] arr = {3,2,5,1,1,5};
 
         if (canSplitIntoThreeEqualSums(arr)) {
             System.out.println("The array can be split into three equal sum subarrays.");
@@ -29,13 +29,14 @@ public class SplitArrayIntoThreeEqualSums {
         int count = 0;
 
         // Iterate to find positions where cumulative sum equals one-third of the total sum
-        for (int i = 0; i <= arr.length - 1; i++) {
+        for (int i = 0; i <= arr.length - 1; i++)
+        {
             currentSum += arr[i];
 
-            if (currentSum == targetSum) {
+            if (currentSum == targetSum)
+            {
                 count++;
-
-               System.out.println(count+" "+currentSum+" "+arr[i]+" "+i);
+                //System.out.println(count+" "+currentSum+" "+arr[i]+" "+i);
                 currentSum = 0;
             }
         }
